@@ -5,7 +5,7 @@
   align-items: center;
   margin-top: 20px;
 }
-.item-details-container {
+.item-image-details-container {
   width: 90%;
   font-family: 'Roboto';
   display: flex;
@@ -67,15 +67,15 @@
   margin-bottom: 10px;
 }
 .item-availability-brand {
-  color: #171f46;
+  color: #616e7c;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 10px;
 }
 .item-availability-brand-values {
-  color: #616e7c;
-  font-weight: normal;
+  color: #171f46;
+  font-weight: bold;
 }
 .item-horizontal-line {
   border: none;
@@ -87,16 +87,16 @@
   align-items: center;
   margin-bottom: 10px;
 }
-.plus-minus-sign {
+.plus-minus-button {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+.plus-square {
+  width: 20px;
+  height: 20px;
   color: #616e7c;
-  font-size: 20px;
-  line-height: 1;
-  border: 1px solid #616e7c;
-  width: 18px;
-  height: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .item-quantity {
   color: #616e7c;
@@ -114,6 +114,13 @@
   padding: 10px;
   margin-bottom: 10px;
   align-self: flex-start;
+  cursor: pointer;
+}
+.smlr-prdt-main-container {
+  width: 90%;
+  max-width: 1110px;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .smlr-prdt-heading {
   color: #616e7c;
@@ -130,8 +137,8 @@
 .smlr-prdt-container {
   width: 75%;
   font-family: 'Roboto';
-  margin: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
   max-width: 250px;
 }
 .smlr-prdt-image {
@@ -183,16 +190,78 @@
   width: 18px;
   margin-bottom: 3px;
 }
+.item-error-main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+.item-error-container {
+  width: 90%;
+  max-width: 1110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item-error-image {
+  width: 90%;
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.item-error-heading {
+  color: #12022f;
+  font-size: 25px;
+  font-family: 'Roboto';
+}
+.item-error-button {
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #3b82f6;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Roboto';
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.item-loading-spinner {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
 
 @media screen and (min-width: 768px) {
-  .image-image-details-container {
+  .item-image-details-container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    max-width: 1110px;
+    width: 90%;
   }
   .item-image {
     width: 50%;
+    max-height: 500px;
+  }
+  .item-title {
+    font-size: 40px;
+    margin-top: 0px;
   }
   .item-details-container {
-    width: 50%;
+    margin-left: 30px;
+  }
+  .smlr-prdt-container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .smlr-prdt-brand {
+    flex: 1;
+  }
+  .item-error-image {
+    max-width: 500px;
+  }
+  .item-error-heading {
+    font-size: 35px;
   }
 }
