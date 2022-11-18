@@ -169,7 +169,7 @@ class ProductItemDetails extends Component {
                 <button
                   type="button"
                   className="plus-minus-button"
-                  data-testid="minus"
+                  testid="minus"
                 >
                   <BsDashSquare
                     className="plus-square"
@@ -180,7 +180,7 @@ class ProductItemDetails extends Component {
                 <button
                   type="button"
                   className="plus-minus-button"
-                  data-testid="plus"
+                  testid="plus"
                 >
                   <BsPlusSquare
                     className="plus-square"
@@ -225,7 +225,7 @@ class ProductItemDetails extends Component {
   )
 
   renderLoadingView = () => (
-    <div data-testid="loader" className="item-loading-spinner">
+    <div testid="loader" className="item-loading-spinner">
       <Loader type="ThreeDots" color="#0b69ff" height={80} width={80} />
     </div>
   )
