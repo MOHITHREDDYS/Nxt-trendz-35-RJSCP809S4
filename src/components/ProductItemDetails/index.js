@@ -169,23 +169,19 @@ class ProductItemDetails extends Component {
                 <button
                   type="button"
                   className="plus-minus-button"
-                  testid="minus"
+                  data-testid="minus"
+                  onClick={this.onClickingMinus}
                 >
-                  <BsDashSquare
-                    className="plus-square"
-                    onClick={this.onClickingMinus}
-                  />
+                  <BsDashSquare className="plus-square" />
                 </button>
                 <p className="item-quantity">{productQuantity}</p>
                 <button
                   type="button"
                   className="plus-minus-button"
-                  testid="plus"
+                  data-testid="plus"
+                  onClick={this.onClickingPlus}
                 >
-                  <BsPlusSquare
-                    className="plus-square"
-                    onClick={this.onClickingPlus}
-                  />
+                  <BsPlusSquare className="plus-square" />
                 </button>
               </div>
               <button type="button" className="add-to-cart-button">
@@ -225,7 +221,7 @@ class ProductItemDetails extends Component {
   )
 
   renderLoadingView = () => (
-    <div testid="loader" className="item-loading-spinner">
+    <div data-testid="loader" className="item-loading-spinner">
       <Loader type="ThreeDots" color="#0b69ff" height={80} width={80} />
     </div>
   )
